@@ -4,7 +4,7 @@ class Url < ApplicationRecord
   format: { :with => URI::regexp(['http','https']), :message => "is an invalid URL"}
 
   def shorten
-   self.short_url = SecureRandom.hex(5)
+   self.short_url = SecureRandom.hex(3)
  end
  
 end
